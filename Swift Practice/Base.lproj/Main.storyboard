@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_Practice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,46 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HelloWorld" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGD-PP-Deq">
+                                <rect key="frame" x="146" y="40" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ni1-k3-sBr">
+                                <rect key="frame" x="158" y="76" width="60" height="30"/>
+                                <state key="normal" title="Push ME"/>
+                                <connections>
+                                    <action selector="PushButton1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BBT-e4-4ct"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIn-ES-HcE">
+                                <rect key="frame" x="165" y="116" width="45" height="30"/>
+                                <state key="normal" title="PUSH!"/>
+                                <connections>
+                                    <action selector="PushButton2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zC8-57-mjC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YGD-PP-Deq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="3Yx-Wl-k1I"/>
+                            <constraint firstItem="Ni1-k3-sBr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5H8-AL-oQY"/>
+                            <constraint firstItem="YGD-PP-Deq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lf7-KB-o6h"/>
+                            <constraint firstItem="RIn-ES-HcE" firstAttribute="top" secondItem="Ni1-k3-sBr" secondAttribute="bottom" constant="10" id="Qjh-0g-Y2F"/>
+                            <constraint firstItem="YGD-PP-Deq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VnK-yc-C4q"/>
+                            <constraint firstItem="RIn-ES-HcE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h47-aL-f2b"/>
+                            <constraint firstItem="Ni1-k3-sBr" firstAttribute="top" secondItem="YGD-PP-Deq" secondAttribute="bottom" constant="15" id="qfY-qe-o1n"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="FirstLabel" destination="YGD-PP-Deq" id="pho-ps-gtv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="474" y="-22"/>
         </scene>
     </scenes>
 </document>
