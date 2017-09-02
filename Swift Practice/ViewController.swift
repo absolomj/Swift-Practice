@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     var tapCount = 0
   
     @IBAction func PushButton1(_ sender: Any) {tapCount = tapCount + 1
-        if tapCount >= 20 {FirstLabel.text = "YOU TAPPED 20 TIMES!"}
+        if tapCount >= 30 {FirstLabel.text = "YOU TAPPED 30 TIMES!"}
     print(tapCount)}
 
     @IBAction func PushButton2(_ sender: Any) {FirstLabel.text = "BUTTONS ARE COOL!"
