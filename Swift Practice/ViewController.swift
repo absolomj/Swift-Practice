@@ -9,16 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var FirstLabel: UILabel!
     
-    var tapCount = 0
-  
-    @IBAction func PushButton1(_ sender: Any) {tapCount = tapCount + 1
-        if tapCount >= 30 {FirstLabel.text = "YOU TAPPED 30 TIMES!"}
-    print(tapCount)}
-
-    @IBAction func PushButton2(_ sender: Any) {FirstLabel.text = "BUTTONS ARE COOL!"
-    print("button2 pressed")}
+    @IBOutlet weak var text1: UITextField!
+   
+    @IBOutlet weak var text2: UITextField!
+    
+    @IBAction func PushButton1(_ sender: AnyObject) {
+        
+        print(text1.text!)
+        print(text2.text!)
+    
+    }
     
     
     override func viewDidLoad() {
@@ -33,6 +36,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
+
 

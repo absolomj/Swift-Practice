@@ -34,27 +34,45 @@
                                     <action selector="PushButton1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BBT-e4-4ct"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIn-ES-HcE">
-                                <rect key="frame" x="165" y="116" width="45" height="30"/>
-                                <state key="normal" title="PUSH!"/>
-                                <connections>
-                                    <action selector="PushButton2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zC8-57-mjC"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c9D-h6-0RQ">
+                                <rect key="frame" x="137.5" y="131" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="aDh-Wa-gc3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4hD-nR-aTy">
+                                <rect key="frame" x="137.5" y="171" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Ozh-e6-mGe"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YGD-PP-Deq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="3Yx-Wl-k1I"/>
                             <constraint firstItem="Ni1-k3-sBr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5H8-AL-oQY"/>
                             <constraint firstItem="YGD-PP-Deq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lf7-KB-o6h"/>
-                            <constraint firstItem="RIn-ES-HcE" firstAttribute="top" secondItem="Ni1-k3-sBr" secondAttribute="bottom" constant="10" id="Qjh-0g-Y2F"/>
+                            <constraint firstItem="c9D-h6-0RQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NSa-Uk-jd2"/>
+                            <constraint firstItem="4hD-nR-aTy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OEV-3s-a5O"/>
                             <constraint firstItem="YGD-PP-Deq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VnK-yc-C4q"/>
-                            <constraint firstItem="RIn-ES-HcE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h47-aL-f2b"/>
+                            <constraint firstItem="4hD-nR-aTy" firstAttribute="top" secondItem="c9D-h6-0RQ" secondAttribute="bottom" constant="10" id="oAM-Ak-9Uv"/>
+                            <constraint firstItem="c9D-h6-0RQ" firstAttribute="top" secondItem="Ni1-k3-sBr" secondAttribute="bottom" constant="25" id="pzF-92-Xb9"/>
                             <constraint firstItem="Ni1-k3-sBr" firstAttribute="top" secondItem="YGD-PP-Deq" secondAttribute="bottom" constant="15" id="qfY-qe-o1n"/>
+                            <constraint firstItem="4hD-nR-aTy" firstAttribute="top" secondItem="c9D-h6-0RQ" secondAttribute="bottom" constant="10" id="qh9-wK-QFj"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="FirstLabel" destination="YGD-PP-Deq" id="pho-ps-gtv"/>
+                        <outlet property="Text1" destination="c9D-h6-0RQ" id="J9k-5Y-o1D"/>
+                        <outlet property="Text2" destination="4hD-nR-aTy" id="8Gr-Gw-BgJ"/>
+                        <outlet property="text1" destination="c9D-h6-0RQ" id="x7M-a9-v6x"/>
+                        <outlet property="text2" destination="4hD-nR-aTy" id="fPr-cC-pOD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
