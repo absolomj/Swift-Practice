@@ -18,8 +18,7 @@ class ViewController: UIViewController {
     
     @IBAction func PushButton1(_ sender: AnyObject) {
         
-        print(text1.text!)
-        print(text2.text!)
+FirstLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
     
     }
     
